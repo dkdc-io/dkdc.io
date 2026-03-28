@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>dkdc.io</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noodp"/>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <script>
+      // Prevent flash of wrong theme
+      (function() {
+        const saved = localStorage.getItem('theme');
+        const preferLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        if (saved === 'light' || (!saved && preferLight)) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="/syntax-dark.css">
+    <meta name="description" content="">
+    <meta property="og:title" content="Bookmarks | dkdc.io">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="http:&#x2F;&#x2F;127.0.0.1:64310&#x2F;bookmarks&#x2F;">
+    <meta property="og:image" content="http:&#x2F;&#x2F;127.0.0.1:64310&#x2F;dkdc2-logo-dark.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image&#x2F;png" href="&#x2F;dkdc2-favicon-32.png">
+</head>
+
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav class="navbar" aria-label="Main navigation">
+    <div class="navbar__inner">
+        <a href="/" class="navbar__logo">
+            <img src="https://dkdc.atl1.cdn.digitaloceanspaces.com/images/logos/dkdc2-mark-transparent.png" alt="" class="navbar__logo-img">
+            <span class="logo-name">dkdc</span><span class="logo-tld">.io</span>
+        </a>
+
+        <input type="checkbox" id="nav-toggle" class="navbar__toggle-input">
+
+        <div class="navbar__menu">
+            <ul class="navbar__links">
+                <li><a href="https:&#x2F;&#x2F;dkdc.dev&#x2F;#posts" target="_blank" rel="noopener">blog<svg class="external-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></li>
+            </ul>
+
+            <div class="navbar__actions">
+                
+                <div class="navbar__dropdown">
+                    <button class="navbar__dropdown-toggle" aria-label="projects">
+                        projects
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <ul class="navbar__dropdown-menu">
+                        <li>
+                            <a href="&#x2F;bookmarks">Bookmarks</a>
+                            <a href="https://github.com/lostmygithubaccount&#x2F;bookmarks" class="navbar__dropdown-gh" aria-label="Bookmarks on GitHub" target="_blank" rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="&#x2F;md-cli">MotherDuck CLI</a>
+                            <a href="https://github.com/lostmygithubaccount&#x2F;md-cli" class="navbar__dropdown-gh" aria-label="MotherDuck CLI on GitHub" target="_blank" rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https:&#x2F;&#x2F;zorto.dev" target="_blank" rel="noopener">Zorto<svg class="external-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                            <a href="https://github.com/lostmygithubaccount&#x2F;zorto" class="navbar__dropdown-gh" aria-label="Zorto on GitHub" target="_blank" rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <label for="nav-toggle" class="navbar__hamburger" role="button" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </label>
+        <a href="https://github.com/lostmygithubaccount" class="navbar__icon-link" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/codydkdc" class="navbar__icon-link" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+        </button>
+    </div>
+</nav>
+
+<main class="main" id="main-content">
+    
+
+<section class="hero hero--short">
+    <div class="hero__inner">
+        <h1 class="hero__title"><span class="text-accent">Bookmarks</span></h1>
+        
+        <p class="hero__subtitle">Bookmarks in your filesystem.</p>
+        
+        
+        <a href="https://github.com/lostmygithubaccount&#x2F;bookmarks" class="page-github" target="_blank" rel="noopener" aria-label="Bookmarks on GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            lostmygithubaccount&#x2F;bookmarks
+        </a>
+        
+    </div>
+</section>
+
+
+<div class="page-content">
+    
+    <div class="page-content__body"><h1 id="bookmarks">Bookmarks <a class="zorto-anchor" href="#bookmarks" aria-label="Anchor link for: Bookmarks">#</a></h1>
+<p><a href="https://github.com/lostmygithubaccount/bookmarks/releases" title="" target="_blank" rel="nofollow noreferrer"><img src="https://img.shields.io/github/v/release/lostmygithubaccount/bookmarks?color=blue" alt="GitHub Release" /></a>
+<a href="https://pypi.org/project/dkdc-bookmarks/" title="" target="_blank" rel="nofollow noreferrer"><img src="https://img.shields.io/pypi/v/dkdc-bookmarks?color=blue" alt="PyPI" /></a>
+<a href="https://crates.io/crates/dkdc-bookmarks" title="" target="_blank" rel="nofollow noreferrer"><img src="https://img.shields.io/crates/v/dkdc-bookmarks?color=blue" alt="crates.io" /></a>
+<a href="https://github.com/lostmygithubaccount/bookmarks/actions/workflows/ci.yml" title="" target="_blank" rel="nofollow noreferrer"><img src="https://img.shields.io/github/actions/workflow/status/lostmygithubaccount/bookmarks/ci.yml?branch=main&amp;label=CI" alt="CI" /></a>
+<a href="https://github.com/lostmygithubaccount/bookmarks/blob/main/LICENSE" title="" target="_blank" rel="nofollow noreferrer"><img src="https://img.shields.io/badge/license-MIT-8A2BE2.svg" alt="License: MIT" /></a></p>
+<p>Bookmarks in your filesystem.</p>
+<h2 id="install">Install <a class="zorto-anchor" href="#install" aria-label="Anchor link for: Install">#</a></h2>
+<p>uv (recommended):</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#8fa1b3;">uv</span><span style="color:#c0c5ce;"> tool install dkdc-bookmarks
+</span></pre>
+<p>cargo:</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#8fa1b3;">cargo</span><span style="color:#c0c5ce;"> install dkdc-bookmarks</span><span style="color:#bf616a;"> --features</span><span style="color:#c0c5ce;"> app,webapp
+</span></pre>
+<p>You can use <code>uvx</code> to run it without installing:</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#8fa1b3;">uvx</span><span style="color:#bf616a;"> --from</span><span style="color:#c0c5ce;"> dkdc-bookmarks bookmarks
+</span></pre>
+<h2 id="usage">Usage <a class="zorto-anchor" href="#usage" aria-label="Anchor link for: Usage">#</a></h2>
+<pre style="background-color:#2b303b;">
+<span style="color:#8fa1b3;">bookmarks </span><span style="color:#b48ead;">[</span><span style="color:#c0c5ce;">OPTIONS</span><span style="color:#b48ead;">] [</span><span style="color:#c0c5ce;">URLS</span><span style="color:#b48ead;">]</span><span style="color:#c0c5ce;">...
+</span></pre>
+<h3 id="configuration">Configuration <a class="zorto-anchor" href="#configuration" aria-label="Anchor link for: Configuration">#</a></h3>
+<p>Bookmarks looks for a config file in this order:</p>
+<ol>
+<li><code>--bookmarks-file</code> / <code>-f</code> flag (explicit path)</li>
+<li><code>--local</code> / <code>-l</code> flag (creates <code>./bookmarks.toml</code> if missing)</li>
+<li><code>bookmarks.toml</code> in the current directory (must exist)</li>
+<li><code>$HOME/.config/bookmarks/bookmarks.toml</code> (global, auto-created)</li>
+</ol>
+<p>Example:</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">[urls]
+</span><span style="color:#c0c5ce;">dkdc-bookmarks = &quot;https://github.com/lostmygithubaccount/bookmarks&quot;
+</span><span style="color:#c0c5ce;">github = { url = &quot;https://github.com&quot;, aliases = [&quot;gh&quot;] }
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">[urls.linkedin]
+</span><span style="color:#c0c5ce;">url = &quot;https://linkedin.com&quot;
+</span><span style="color:#c0c5ce;">aliases = [&quot;li&quot;]
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">[groups]
+</span><span style="color:#c0c5ce;">socials = [&quot;gh&quot;, &quot;linkedin&quot;]
+</span></pre>
+<p>URLs can be plain strings, inline tables with aliases, or expanded tables. Groups reference url names or aliases.</p>
+<p>Use the <code>--config</code> or <code>--app</code> or <code>--webapp</code> option to edit the configuration file.</p>
+<h3 id="open-urls">Open urls <a class="zorto-anchor" href="#open-urls" aria-label="Anchor link for: Open urls">#</a></h3>
+<p>Open urls by name, alias, or group:</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#8fa1b3;">bookmarks</span><span style="color:#c0c5ce;"> github
+</span><span style="color:#8fa1b3;">bookmarks</span><span style="color:#c0c5ce;"> gh linkedin
+</span><span style="color:#8fa1b3;">bookmarks</span><span style="color:#c0c5ce;"> socials
+</span></pre>
+<p>You can input multiple url names, aliases, or groups at once. They will be opened in the order they are provided.</p>
+<h3 id="options">Options <a class="zorto-anchor" href="#options" aria-label="Anchor link for: Options">#</a></h3>
+<p>Available options:</p>
+<table><thead><tr><th>Flag</th><th>Short</th><th>Description</th></tr></thead><tbody>
+<tr><td><code>--bookmarks-file &lt;PATH&gt;</code></td><td><code>-f</code></td><td>Use a specific bookmarks file</td></tr>
+<tr><td><code>--global</code></td><td><code>-g</code></td><td>Use global config, ignore local bookmarks.toml</td></tr>
+<tr><td><code>--local</code></td><td><code>-l</code></td><td>Use local config (<code>./bookmarks.toml</code>), create if missing</td></tr>
+<tr><td><code>--config</code></td><td><code>-c</code></td><td>Open active bookmarks file in <code>$EDITOR</code> (use <code>-gc</code> for global)</td></tr>
+<tr><td><code>--app</code></td><td><code>-a</code></td><td>Open desktop app (requires <code>app</code> feature)</td></tr>
+<tr><td><code>--webapp</code></td><td><code>-w</code></td><td>Open the web app in browser (requires <code>webapp</code> feature)</td></tr>
+<tr><td><code>--help</code></td><td><code>-h</code></td><td>Print help</td></tr>
+<tr><td><code>--version</code></td><td><code>-V</code></td><td>Print version</td></tr>
+</tbody></table>
+</div>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="copyright"><a href="/">dkdc.io</a> by <a href="https://dkdc.dev" target="_blank" rel="noopener">dkdc.dev</a> via <a href="https://zorto.dev" target="_blank" rel="noopener">Zorto</a></div>
+    </div>
+</footer>
+
+<script>
+(function() {
+  const toggle = document.querySelector('.theme-toggle');
+  const html = document.documentElement;
+
+  function getPreferredTheme() {
+    const saved = localStorage.getItem('theme');
+    if (saved) return saved;
+    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  }
+
+  function setTheme(theme) {
+    if (theme === 'light') {
+      html.setAttribute('data-theme', 'light');
+    } else {
+      html.removeAttribute('data-theme');
+    }
+    localStorage.setItem('theme', theme);
+  }
+
+  setTheme(getPreferredTheme());
+  toggle.style.display = 'flex';
+
+  toggle.addEventListener('click', () => {
+    const current = html.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+    setTheme(current === 'light' ? 'dark' : 'light');
+  });
+
+  window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) {
+      setTheme(e.matches ? 'light' : 'dark');
+    }
+  });
+})();
+</script>
+
+<script>
+(function() {
+  document.querySelectorAll('.navbar__dropdown-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var dropdown = btn.closest('.navbar__dropdown');
+      var wasOpen = dropdown.classList.contains('open');
+      document.querySelectorAll('.navbar__dropdown.open').forEach(function(d) {
+        d.classList.remove('open');
+      });
+      if (!wasOpen) dropdown.classList.add('open');
+    });
+  });
+  document.addEventListener('click', function() {
+    document.querySelectorAll('.navbar__dropdown.open').forEach(function(d) {
+      d.classList.remove('open');
+    });
+  });
+})();
+</script>
+
+<script>
+(function() {
+  var clipSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>';
+  var checkSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+
+  document.querySelectorAll('pre').forEach(function(pre) {
+    var wrapper = document.createElement('div');
+    wrapper.className = 'code-block-wrapper';
+    pre.parentNode.insertBefore(wrapper, pre);
+    wrapper.appendChild(pre);
+
+    var btn = document.createElement('button');
+    btn.className = 'copy-button';
+    btn.innerHTML = clipSvg;
+    btn.setAttribute('aria-label', 'Copy code');
+    btn.addEventListener('click', function() {
+      navigator.clipboard.writeText(pre.textContent).then(function() {
+        btn.innerHTML = checkSvg;
+        setTimeout(function() { btn.innerHTML = clipSvg; }, 1500);
+      });
+    });
+    wrapper.appendChild(btn);
+  });
+})();
+</script>
+
+<script>
+(function() {
+  var toggle = document.getElementById('nav-toggle');
+  var label = document.querySelector('.navbar__hamburger');
+  if (toggle && label) {
+    toggle.addEventListener('change', function() {
+      label.setAttribute('aria-expanded', toggle.checked ? 'true' : 'false');
+    });
+  }
+  var navLinks = document.querySelectorAll('.navbar__links a');
+  for (var i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener('click', function() {
+      if (toggle && toggle.checked) {
+        toggle.checked = false;
+        if (label) label.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>

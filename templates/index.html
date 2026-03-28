@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <canvas class="hero__canvas" id="binary-rain"></canvas>
+    <div class="hero__inner">
+        <h1 class="hero__title"><a href="#projects" class="text-accent">Code</a> <span class="text-cyan">by</span> <a href="#about" class="text-accent">Cody</a></h1>
+    </div>
+</section>
+
+{%- if config.extra.projects %}
+<section class="projects" id="projects">
+    <h2 class="projects__heading">projects</h2>
+    {# <a href="https://netsky.ai" target="_blank" rel="noopener" class="netsky-banner" role="button" tabindex="0">
+        <div class="netsky-banner__shine"></div>
+        <span class="netsky-banner__name"><span class="netsky-name">netsky</span><span class="netsky-tld">.ai</span></span>
+        <span class="netsky-banner__sub">under construction; invite only</span>
+    </a> #}
+    <div class="projects__grid">
+        {%- for project in config.extra.projects %}
+        <a href="{{ project.url }}" class="project-card"{% if project.url is starting_with("http") %} target="_blank" rel="noopener"{% endif %}>
+            <h3 class="project-card__name">
+                {{ project.name }}
+                {%- if project.url is starting_with("http") %}
+                <svg class="external-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                {%- endif %}
+            </h3>
+            {%- if project.description %}
+            <p class="project-card__desc">{{ project.description }}</p>
+            {%- endif %}
+            {%- if project.github %}
+            <span class="project-card__repo">{{ project.github }}</span>
+            {%- endif %}
+        </a>
+        {%- endfor %}
+    </div>
+</section>
+{%- endif %}
+
+{%- if section.content %}
+<section class="about" id="about">
+    <h2 class="about__heading">about</h2>
+    <div class="about__logo">
+        <img src="/dkdc2-logo-transparent.png" alt="dkdc logo" class="about__logo-img">
+    </div>
+    <div class="about__body">{{ section.content | safe }}</div>
+</section>
+{%- endif %}
+{% endblock content %}
+
+{% block extra_body %}
+<script>
+(function() {
+  const canvas = document.getElementById('binary-rain');
+  if (!canvas) return;
+
+  // Respect reduced motion
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    canvas.style.display = 'none';
+    return;
+  }
+
+  const ctx = canvas.getContext('2d');
+  const violet = [167, 139, 250];
+  const cyan = [34, 211, 238];
+
+  let columns, drops, speeds;
+  const fontSize = 14;
+  const fpsInterval = 1000 / 15;
+  let lastTime = 0;
+  let lastWidth = 0;
+
+  function resize() {
+    var w = canvas.parentElement.offsetWidth;
+    // Only resize when width changes — mobile address bar hide/show only
+    // affects height, and setting canvas.width/height clears the canvas
+    if (w !== lastWidth) {
+      lastWidth = w;
+      canvas.width = w;
+      canvas.height = canvas.parentElement.offsetHeight;
+      columns = Math.floor(w / fontSize);
+      drops = new Array(columns).fill(0).map(() => Math.random() * -50);
+      speeds = new Array(columns).fill(0).map(() => 0.3 + Math.random() * 0.7);
+    }
+  }
+
+  function lerp(a, b, t) {
+    return a.map((v, i) => Math.round(v + (b[i] - v) * t));
+  }
+
+  function draw(now) {
+    requestAnimationFrame(draw);
+    if (now - lastTime < fpsInterval) return;
+    lastTime = now;
+
+    ctx.fillStyle = 'rgba(15, 13, 26, 0.12)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.font = fontSize + 'px monospace';
+
+    const colorT = (Math.sin(now * 0.0005) + 1) / 2;
+
+    for (let i = 0; i < columns; i++) {
+      const char = Math.random() > 0.5 ? '1' : '0';
+      const x = i * fontSize;
+      const y = drops[i] * fontSize;
+
+      // Each column shifts phase slightly for variety
+      const t = (Math.sin(now * 0.0005 + i * 0.3) + 1) / 2;
+      const rgb = lerp(violet, cyan, t);
+      const alpha = 0.15 + Math.random() * 0.15;
+      ctx.fillStyle = 'rgba(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',' + alpha + ')';
+      ctx.fillText(char, x, y);
+
+      if (y > canvas.height && Math.random() > 0.98) {
+        drops[i] = 0;
+        speeds[i] = 0.3 + Math.random() * 0.7;
+      }
+      drops[i] += speeds[i];
+    }
+  }
+
+  resize();
+  window.addEventListener('resize', resize);
+  requestAnimationFrame(draw);
+})();
+</script>
+{% endblock extra_body %}

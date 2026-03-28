@@ -1,0 +1,39 @@
+# dkdc.io: Zorto configuration
+base_url = "https://dkdc.io"
+title = "dkdc.io"
+generate_llms_txt = false
+
+compile_sass = true
+slugify.paths = "safe"
+
+[markdown]
+highlight_code = true
+insert_anchor_links = "right"
+highlight_theme = "css"
+highlight_themes_css = [
+  { theme = "base16-ocean-dark", filename = "syntax-dark.css" },
+]
+render_emoji = true
+external_links_target_blank = true
+external_links_no_follow = true
+external_links_no_referrer = true
+smart_punctuation = true
+
+[extra]
+logo_text = "dkdc.io"
+author = "Cody"
+default_og_image = "dkdc2-logo-dark.png"
+favicon = "/dkdc2-favicon-32.png"
+favicon_mimetype = "image/png"
+
+menu_items = [
+  { name = "blog", url = "https://dkdc.dev/#posts", external = true },
+]
+
+projects = [
+  { name = "Bookmarks", url = "/bookmarks", github = "lostmygithubaccount/bookmarks", description = "Bookmarks in your filesystem." },
+  { name = "MotherDuck CLI", url = "/md-cli", github = "lostmygithubaccount/md-cli", description = "CLI for the MotherDuck REST API." },
+  { name = "Zorto", url = "https://zorto.dev", github = "lostmygithubaccount/zorto", description = "A fast static site generator with executable code blocks." },
+]
+
+copyright_html = '<a href="/">dkdc.io</a> by <a href="https://dkdc.dev" target="_blank" rel="noopener">dkdc.dev</a> via <a href="https://zorto.dev" target="_blank" rel="noopener">Zorto</a>'
