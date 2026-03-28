@@ -7,4 +7,4 @@ subtitle = "Bookmarks in your filesystem."
 github = "dkdc-io/bookmarks"
 +++
 
-{{ include(path="../../projects/bookmarks/README.md") }}
+{{ include(path="https://raw.githubusercontent.com/dkdc-io/bookmarks/main/README.md") }}
