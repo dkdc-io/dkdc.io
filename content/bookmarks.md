@@ -4,7 +4,7 @@ aliases = ["/links/"]
 [extra]
 hero = true
 subtitle = "Bookmarks in your filesystem."
-github = "lostmygithubaccount/bookmarks"
+github = "dkdc-io/bookmarks"
 +++
 
 {{ include(path="../../projects/bookmarks/README.md") }}
