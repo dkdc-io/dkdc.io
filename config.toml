@@ -33,7 +33,7 @@ menu_items = [
 projects = [
   { name = "Bookmarks", url = "/bookmarks", github = "dkdc-io/bookmarks", description = "Bookmarks in your filesystem." },
   { name = "MotherDuck CLI", url = "/md-cli", github = "dkdc-io/md-cli", description = "CLI for the MotherDuck REST API." },
-  { name = "Zorto", url = "https://zorto.dev", github = "dkdc-io/zorto", description = "A fast static site generator with executable code blocks." },
+  { name = "Zorto", url = "https://zorto.dev", github = "dkdc-io/zorto", description = "The AI-native static site generator (SSG) with executable code blocks." },
 ]
 
 copyright_html = '<a href="/">dkdc.io</a> by <a href="https://dkdc.dev" target="_blank" rel="noopener">dkdc.dev</a> via <a href="https://zorto.dev" target="_blank" rel="noopener">Zorto</a>'
