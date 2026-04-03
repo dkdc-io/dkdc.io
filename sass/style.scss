@@ -821,6 +821,12 @@ pre {
     margin: 0 0 24px;
   }
 
+  &__subtext {
+    font-size: 0.95rem;
+    color: var(--color-muted);
+    margin: -16px 0 24px;
+  }
+
   &__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));

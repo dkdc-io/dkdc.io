@@ -40,6 +40,31 @@
 </section>
 {%- endif %}
 
+{%- if config.extra.incubating_projects %}
+<section class="projects" id="incubating">
+    <h2 class="projects__heading">incubating</h2>
+    <p class="projects__subtext">projects still in very early development</p>
+    <div class="projects__grid">
+        {%- for project in config.extra.incubating_projects %}
+        <a href="{{ project.url }}" class="project-card"{% if project.url is starting_with("http") %} target="_blank" rel="noopener"{% endif %}>
+            <h3 class="project-card__name">
+                {{ project.name }}
+                {%- if project.url is starting_with("http") %}
+                <svg class="external-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                {%- endif %}
+            </h3>
+            {%- if project.description %}
+            <p class="project-card__desc">{{ project.description }}</p>
+            {%- endif %}
+            {%- if project.github %}
+            <span class="project-card__repo">{{ project.github }}</span>
+            {%- endif %}
+        </a>
+        {%- endfor %}
+    </div>
+</section>
+{%- endif %}
+
 {%- if section.content %}
 <section class="about" id="about">
     <h2 class="about__heading">about</h2>
