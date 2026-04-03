@@ -2,7 +2,7 @@
 title = "dkdc-lm"
 [extra]
 hero = true
-subtitle = "Local LLM inference management via llama-server."
+subtitle = "Language model service."
 github = "dkdc-io/lm"
 +++
 
