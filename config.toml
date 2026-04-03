@@ -32,16 +32,16 @@ menu_items = [
 
 projects = [
   { name = "Bookmarks", url = "/bookmarks", github = "dkdc-io/bookmarks", description = "Bookmarks in your filesystem." },
-  { name = "dkdc-lm", url = "/lm", github = "dkdc-io/lm", description = "Language model service." },
   { name = "MotherDuck CLI", url = "/md-cli", github = "dkdc-io/md-cli", description = "CLI for the MotherDuck REST API." },
   { name = "Zorto", url = "https://zorto.dev", github = "dkdc-io/zorto", description = "The AI-native static site generator (SSG) with executable code blocks." },
 ]
 
 incubating_projects = [
   { name = "dkdc-db", url = "/db", github = "dkdc-io/db", description = "HTAP embedded database." },
-  { name = "dkdc-home", url = "https://github.com/dkdc-io/home", github = "dkdc-io/home", description = "Home directory resolver." },
-  { name = "dkdc-sh", url = "https://github.com/dkdc-io/sh", github = "dkdc-io/sh", description = "Shell library." },
-  { name = "Stringflow", url = "https://github.com/dkdc-io/stringflow", github = "dkdc-io/stringflow", description = "LLM wire format bridge." },
+  { name = "dkdc-home", url = "/home", github = "dkdc-io/home", description = "Home directory resolver." },
+  { name = "dkdc-lm", url = "/lm", github = "dkdc-io/lm", description = "Language model service." },
+  { name = "dkdc-sh", url = "/sh", github = "dkdc-io/sh", description = "Shell library." },
+  { name = "Stringflow", url = "/stringflow", github = "dkdc-io/stringflow", description = "LLM wire format bridge." },
 ]
 
 copyright_html = '<a href="/">dkdc.io</a> by <a href="https://dkdc.dev" target="_blank" rel="noopener">dkdc.dev</a> via <a href="https://zorto.dev" target="_blank" rel="noopener">Zorto</a>'
