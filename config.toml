@@ -32,6 +32,7 @@ menu_items = [
 
 projects = [
   { name = "Bookmarks", url = "/bookmarks", github = "dkdc-io/bookmarks", description = "Bookmarks in your filesystem." },
+  { name = "dkdc-lm", url = "/lm", github = "dkdc-io/lm", description = "Local LLM inference management via llama-server." },
   { name = "MotherDuck CLI", url = "/md-cli", github = "dkdc-io/md-cli", description = "CLI for the MotherDuck REST API." },
   { name = "Zorto", url = "https://zorto.dev", github = "dkdc-io/zorto", description = "The AI-native static site generator (SSG) with executable code blocks." },
 ]
