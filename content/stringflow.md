@@ -1,8 +1,8 @@
 +++
-title = "Stringflow"
+title = "StringFlow"
 [extra]
 hero = true
-subtitle = "LLM wire format bridge."
+subtitle = "Flow strings through language models."
 github = "dkdc-io/stringflow"
 +++
 
