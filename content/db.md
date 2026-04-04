@@ -2,7 +2,7 @@
 title = "dkdc-db"
 [extra]
 hero = true
-subtitle = "Embedded HTAP database system."
+subtitle = "HTAP database system."
 github = "dkdc-io/db"
 +++
 
