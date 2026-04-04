@@ -38,7 +38,7 @@ projects = [
 
 incubating_projects = [
   { name = "dkdc-db", url = "/db", github = "dkdc-io/db", description = "Embedded HTAP database system." },
-  { name = "dkdc-home", url = "/home", github = "dkdc-io/home", description = "Home directory resolver." },
+  { name = "dkdc-home", url = "/home", github = "dkdc-io/home", description = "Home library." },
   { name = "dkdc-lm", url = "/lm", github = "dkdc-io/lm", description = "Language model service." },
   { name = "dkdc-sh", url = "/sh", github = "dkdc-io/sh", description = "Shell library." },
   { name = "StringFlow", url = "/stringflow", github = "dkdc-io/stringflow", description = "Flow strings through language models." },

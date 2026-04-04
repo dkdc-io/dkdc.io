@@ -2,7 +2,7 @@
 title = "dkdc-home"
 [extra]
 hero = true
-subtitle = "Home directory resolver."
+subtitle = "Home library."
 github = "dkdc-io/home"
 +++
 
