@@ -8,3 +8,5 @@ github = "dkdc-io/bookmarks"
 +++
 
 {{ include(path="https://raw.githubusercontent.com/dkdc-io/bookmarks/main/README.md") }}
+
+<!-- Rebuild trigger: refresh dkdc-io/bookmarks README include. -->
