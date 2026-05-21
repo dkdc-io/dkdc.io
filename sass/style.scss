@@ -970,6 +970,8 @@ pre {
     width: 280px;
     height: 280px;
     object-fit: contain;
+    user-select: none;
+    -webkit-user-drag: none;
   }
 
   &__heading {
