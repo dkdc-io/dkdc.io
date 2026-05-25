@@ -27,7 +27,7 @@ favicon = "/dkdc2-favicon-32.png"
 favicon_mimetype = "image/png"
 
 menu_items = [
-  { name = "blog", url = "https://dkdc.dev/#posts", external = true },
+  { name = "blog", url = "https://dkdc.dev/posts", external = true },
 ]
 
 projects = [
